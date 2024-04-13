@@ -41,7 +41,6 @@ mod my_module {
                 Command::Uppercase => output.push(string.to_uppercase()),
                 Command::Trim => output.push(String::from(string.trim())),
                 Command::Append(n) => output.push(format!("{}{}", string, BAR.repeat(*n))),
-                _ => (),
             }
         }
         output
